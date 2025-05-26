@@ -1,0 +1,39 @@
+﻿<Window x:Class="MedCentre.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Зеленый Рай - Авторизация" Height="500" Width="400"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Poppins">
+    <Grid Background="#F8F9FA">
+        <StackPanel MaxWidth="320" Margin="0,30,0,0">
+            <TextBlock Text="Зеленый Рай" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10" Foreground="{StaticResource AccentBrush}"/>
+            <TextBlock Text="Вход в систему" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,30" Foreground="#444"/>
+            
+            <StackPanel>
+                <TextBlock Text="Логин:" Margin="0,0,0,5" FontWeight="SemiBold"/>
+                <TextBox x:Name="login" Margin="0,0,0,15" />
+                
+                <TextBlock Text="Пароль:" Margin="0,0,0,5" FontWeight="SemiBold"/>
+                <PasswordBox x:Name="password" Margin="0,0,0,20" />
+                
+                <StackPanel x:Name="captchaPanel" Visibility="Collapsed" Margin="0,0,0,15">
+                    <TextBlock Text="Введите код с картинки:" Margin="0,0,0,5" FontWeight="SemiBold"/>
+                    <Border x:Name="captchaImageContainer" Margin="0,0,0,10" BorderThickness="1" BorderBrush="#ddd" Height="50">
+                    </Border>
+                    <TextBox x:Name="captcha" />
+                </StackPanel>
+                
+                <TextBlock x:Name="error" Foreground="Red" TextWrapping="Wrap" Margin="0,0,0,15" Visibility="Collapsed"/>
+                
+                <TextBlock x:Name="lockoutTimer" Foreground="Red" HorizontalAlignment="Center" Margin="0,0,0,15" Visibility="Collapsed"/>
+                
+                <Button x:Name="btnLogin" Content="Войти" Click="BtnLogin_Click" Margin="0,0,0,15"/>
+                <Button x:Name="btnRegister" Content="Регистрация" Click="BtnRegister_Click" Margin="0,0,0,15"/>
+                <Button x:Name="btnGuest" Content="Войти как гость" Click="BtnGuest_Click" Background="Transparent" Foreground="#444" BorderBrush="#ddd" BorderThickness="1"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
