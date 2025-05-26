@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\MedCentre\\MedCentre\\MedCentre.csproj": {}
+    "C:\\Users\\csp06\\RiderProjects\\-\\MedCentre\\MedCentre.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\MedCentre\\MedCentre\\MedCentre.csproj": {
+    "C:\\Users\\csp06\\RiderProjects\\-\\MedCentre\\MedCentre.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\MedCentre\\MedCentre\\MedCentre.csproj",
+        "projectUniqueName": "C:\\Users\\csp06\\RiderProjects\\-\\MedCentre\\MedCentre.csproj",
         "projectName": "MedCentre",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\MedCentre\\MedCentre\\MedCentre.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\MedCentre\\MedCentre\\obj\\",
+        "projectPath": "C:\\Users\\csp06\\RiderProjects\\-\\MedCentre\\MedCentre.csproj",
+        "packagesPath": "C:\\Users\\csp06\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\csp06\\RiderProjects\\-\\MedCentre\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\csp06\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -79,6 +78,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -87,7 +104,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

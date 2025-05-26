@@ -13,12 +13,7 @@ public partial class RegisterWindow : Window
         userService = new UserService();
     }
 
-    private void BtnRegister_Click(object sender, RoutedEventArgs e)
-    {
-        throw new NotImplementedException();
-    }
-
-    private async void BtnBack_Click(object sender, RoutedEventArgs e)
+    private async void BtnRegister_Click(object sender, RoutedEventArgs e)
     {
         if (password.Password != passwordRepet.Password)
         {
@@ -45,5 +40,12 @@ public partial class RegisterWindow : Window
             error.Text = "Пароли не совпадают";
             error.Visibility = Visibility.Visible;
         }
+    }
+
+    private void BtnBack_Click(object sender, RoutedEventArgs e)
+    {
+        var loginWindow = new LoginWindow();
+        loginWindow.Show();
+        this.Close();
     }
 }
