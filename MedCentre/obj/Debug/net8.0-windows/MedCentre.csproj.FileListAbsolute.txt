@@ -169,7 +169,8 @@ C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\OrderWi
 C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\OrderWindow.baml
 C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\OrderManagementWindow.baml
 C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\OrderManagementWindow.g.cs
-C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\AdminProductManagement.baml
-C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\ProductWindow.baml
-C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\AdminProductManagement.g.cs
-C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\ProductWindow.g.cs
+C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\ProductFormWindow.baml
+C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\ProductManagementWindow.baml
+C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\ProductFormWindow.g.cs
+C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\ProductManagementWindow.g.cs
+C:\Users\User\RiderProjects\MedCentre\MedCentre\obj\Debug\net8.0-windows\MedCentre.sourcelink.json

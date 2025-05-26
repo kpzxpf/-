@@ -1,5 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.IO;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace MedCentre.models;
 
@@ -39,4 +42,36 @@ public class Product
     public virtual Supplier Supplier { get; set; }
         
     public virtual ICollection<OrderItem> OrderItems { get; set; }
+    
+    public ImageSource Image
+    {
+        get
+        {
+            if (ImageData == null || ImageData.Length == 0)
+            {
+                return DefaultImage;
+            }
+
+            try
+            {
+                var bmp = new BitmapImage();
+                using (var ms = new MemoryStream(ImageData))
+                {
+                    bmp.BeginInit();
+                    bmp.CacheOption = BitmapCacheOption.OnLoad;
+                    bmp.StreamSource = ms;
+                    bmp.EndInit();
+                    bmp.Freeze();
+                }
+                return bmp;
+            }
+            catch
+            {
+                return DefaultImage;
+            }
+        }
+    }
+
+    private static readonly ImageSource DefaultImage =
+        new BitmapImage(new Uri("pack://application:,,,/MedCentre;component/Resources/picture.png"));
 }

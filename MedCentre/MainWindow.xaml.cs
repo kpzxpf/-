@@ -78,6 +78,10 @@ namespace MedCentre
             {
                 ManagerOrderButton.Visibility = Visibility.Visible;
             }
+            if (_userSession.CurrentUser?.Role.Id == 2) 
+            {
+                ProductManagementButton.Visibility = Visibility.Visible;
+            }
             
             _filteredProducts = new ObservableCollection<ProductViewModel>();
             DataContext = this;
@@ -218,6 +222,13 @@ namespace MedCentre
             var managerOrderWindow = new OrderManagementWindow();
             managerOrderWindow.Owner = this;
             managerOrderWindow.ShowDialog();
+        }
+        
+        private void ProductManagementButton_Click(object sender, RoutedEventArgs e)
+        {
+            var productManagementWindow = new ProductManagementWindow();
+            productManagementWindow.ShowDialog();
+            LoadProducts();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

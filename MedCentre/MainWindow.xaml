@@ -83,6 +83,16 @@
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,10">
             
+            <Button x:Name="ProductManagementButton"
+                    Content="Управление товарами"
+                    Visibility="Collapsed"
+                    Click="ProductManagementButton_Click"
+                    Background="{StaticResource PrimaryBrush}"
+                    Foreground="White"
+                    Padding="15,8"
+                    Margin="0,0,10,0"
+                    FontWeight="SemiBold"/>
+            
             <Button x:Name="ManagerOrderButton"
                     Content="Управление заказами"
                     Visibility="Hidden"

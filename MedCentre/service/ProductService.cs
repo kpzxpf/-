@@ -18,6 +18,7 @@ public class ProductService
     {
         List<Product> products = _context.Products
             .Include(p => p.Category)
+            .Include(p => p.Supplier)
             .ToList();
 
         return new ObservableCollection<Product>(products);
