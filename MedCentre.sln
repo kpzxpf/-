@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedCentre", "MedCentre\MedCentre.csproj", "{FE06CD74-DA38-4A88-A16F-25146F39EED9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenParadise", "GreenParadise\GreenParadise.csproj", "{FE06CD74-DA38-4A88-A16F-25146F39EED9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0B254AEB-3A99-4243-860C-9AA2AF3A6DC6}"
 	ProjectSection(SolutionItems) = preProject
